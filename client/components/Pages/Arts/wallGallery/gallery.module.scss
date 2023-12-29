@@ -1,0 +1,10 @@
+.gallery{
+  display: flex;
+  flex-direction: column;
+  gap: 124px;
+  align-items: center;
+
+  & > *:nth-child(2n) {
+    flex-direction: row-reverse;
+  }
+}

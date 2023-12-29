@@ -1,0 +1,27 @@
+.main{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  align-items: center;
+  z-index: 5;
+  position: relative;
+}
+
+.buttons{
+  display: flex;
+  gap: 20px;
+
+  & > *{
+    width: 20px;
+    height: 20px;
+    background: black;
+  }
+}
+
+.logo{
+
+  &.--light{
+    filter: brightness(0) saturate(100%) invert(20%) sepia(84%) saturate(5901%) hue-rotate(243deg) brightness(99%) contrast(107%);
+  }
+}

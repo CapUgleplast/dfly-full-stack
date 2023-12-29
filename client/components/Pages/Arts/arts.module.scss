@@ -1,0 +1,13 @@
+.header{
+  max-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -120px;
+  margin-bottom: 130px;
+
+  img {
+    position: static !important;
+    height: auto !important;
+    filter: brightness(0.35) blur(4px);
+  }
+}

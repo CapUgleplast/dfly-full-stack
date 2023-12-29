@@ -1,0 +1,28 @@
+.links{
+  display: flex;
+  gap: 27px;
+
+  a{
+    font-family: circeLight;
+    font-size: 18px;
+    color: #4f4f4f;
+
+    &:hover{
+      color: #FFFFFF;
+    }
+  }
+}
+
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 38px 50px;
+  margin-top: 140px;
+}
+
+.copy{
+  font-family: circeLight;
+  font-size: 18px;
+  color: #4f4f4f;
+}
