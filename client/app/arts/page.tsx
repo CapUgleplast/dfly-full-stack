@@ -1,8 +1,8 @@
 import styles from '@/components/Pages/Arts/arts.module.scss'
-import Gallery from "@/components/Pages/Arts/wallGallery/Gallery";
 import MainLayout from '@/app/mainLayout'
-import axios from "@/apiConfig.js";
-import Image from "next/image";
+import Desktop from '@/components/Pages/Arts/Desktop'
+
+import {fetchAxios} from "@/apiConfig.js";
 import {Metadata, NextPageContext} from "next";
 export const metadata: Metadata = {
     title: 'Create Next App',
@@ -10,21 +10,11 @@ export const metadata: Metadata = {
 }
 
 export default async function Arts({ params }: { params: { id: number }}) {
-    const arts = await axios.get(`/api/arts/`)
+    const arts = await fetchAxios.get(`api/arts/`)
     return (
         <MainLayout theme="--dark">
             <>
-                <div className={styles.header}>
-                    <Image  className={styles.poster}
-                            src={'static/artsHeader.webp'}
-                            fill={true}
-                            alt={''}
-                            priority
-                    />
-                </div>
-                <div>
-                    <Gallery arts={arts.data}/>
-                </div>
+                <Desktop list={arts}/>
             </>
         </MainLayout>
     )

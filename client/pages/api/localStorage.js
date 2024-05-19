@@ -11,6 +11,7 @@ export default async function handler(req, res) {
         const objectData = JSON.parse(jsonData);
 
         if(req.query?.section){
+            console.log(objectData[req.query.section])
             res.status(200).json(objectData[req.query.section]);
             return;
         }

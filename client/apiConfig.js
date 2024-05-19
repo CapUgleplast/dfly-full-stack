@@ -1,10 +1,15 @@
 import axios from 'axios';
 
-const fetchAxios = axios.create({
-    baseURL: 'http://localhost:3333', // Replace with your API endpoint
+export const fetchAxios = axios.create({
+    baseURL: 'http://localhost:3333/', // Replace with your API endpoint
     headers: {
         'Content-Type': 'application/json', // Set the default content type for request headers
     },
 });
 
-export default fetchAxios;
+export const localAxios = axios.create({
+    baseURL: 'http://localhost:3000/', // Replace with your API endpoint
+    headers: {
+        'Content-Type': 'application/json', // Set the default content type for request headers
+    },
+});

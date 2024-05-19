@@ -11,7 +11,7 @@ export default function MainLayout({children, theme}: {children: React.ReactElem
         <body className={`${styles.body} ${styles[theme]}`}>
             <Header theme={theme}/>
                 {children}
-            <Footer/>
+            <Footer theme={theme}/>
         </body>
     )
 }

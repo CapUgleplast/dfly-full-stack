@@ -9,5 +9,6 @@
     position: static !important;
     height: auto !important;
     filter: brightness(0.35) blur(4px);
+    pointer-events: none;
   }
 }

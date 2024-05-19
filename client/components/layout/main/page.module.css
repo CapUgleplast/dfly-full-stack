@@ -3,6 +3,10 @@
 
     &.--dark{
         background: black;
+
+        .footer{
+            background: black;
+        }
     }
 }
 

@@ -1,0 +1,54 @@
+.main {
+  display: flex;
+  height: calc(100vh - 357px);
+
+  .background {
+    max-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+
+    img {
+      position: static !important;
+      filter: brightness(0.35);
+      pointer-events: none;
+      object-fit: cover;
+    }
+  }
+
+  .info{
+    color: #FFFFFF;
+    padding-top: 64px;
+    padding-left: calc(252px);
+    width: 100%;
+
+    .title{
+      font-size: 42px;
+      font-weight: 400;
+      margin-bottom: 50px;
+
+
+    }
+    .social{
+      font-size: 24px;
+      line-height: 31px;
+      font-family: circeLight;
+      font-style: italic;
+      & > * {
+        display: flex;
+        align-items: center;
+
+        button {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .heart{
+      margin-top: 50px;
+    }
+  }
+}
